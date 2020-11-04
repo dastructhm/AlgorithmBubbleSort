@@ -10,7 +10,7 @@ public class Algorithm {
         for(int i = 0; i < myArray.length; i++) {
             // 把该数值向右移动，直至移动到最大的下标处
             for(int j = 1; j < myArray.length - i; j++) {
-                System.out.print("In search " + SortsPerformed + ": i = " + i);
+                System.out.print("In sorting " + SortsPerformed + ": i = " + i);
                 System.out.print(", j = " + j);
                 System.out.print(", Comparing " + myArray[j - 1] + " with right-side neighbours");
 
