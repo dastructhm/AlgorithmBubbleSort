@@ -3,8 +3,6 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        // int[] myArray = { 11, 5, 1, 611, 2};
-
         SetLength myArrayLength = new SetLength();
         int arrayLength = myArrayLength.SetMyArrayLength();
 
@@ -30,6 +28,6 @@ public class Main {
         }
         System.out.println();
 
-        System.out.println("Searches Performed: " + SearchesPerformed);
+        System.out.println("Sorts Performed: " + SearchesPerformed);
     }
 }
