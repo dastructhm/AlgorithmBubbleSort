@@ -8,7 +8,7 @@ public class Algorithm {
     int BubbleSort(int[] myArray) {
         // 把下标1的数值与右边的数值对比
         for(int i = 0; i < myArray.length; i++) {
-            // 把该数值向右移动，直至移动到最右边
+            // 把该数值向右移动，直至移动到最大的下标处
             for(int j = 1; j < myArray.length - i; j++) {
                 System.out.print("In search " + SortsPerformed + ": i = " + i);
                 System.out.print(", j = " + j);
