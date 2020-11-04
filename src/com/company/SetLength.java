@@ -1,7 +1,6 @@
 package com.company;
-
-import java.util.Scanner;
 // 导入java.util中的Scanner类
+import java.util.Scanner;
 
 public class SetLength {
     int SetMyArrayLength(){
