@@ -6,25 +6,25 @@ public class Algorithm {
     int SortsPerformed = 1;
 
     int BubbleSort(int[] myArray) {
-        // 共几轮排序,每轮都是把最大的元素排在后面；负责把那个数字排除在外
+        // 把下标1的数值与右边的数值对比
         for(int i = 0; i < myArray.length; i++) {
-            // 每轮排序中:需要比较的元素个数比上一轮少一个；负责两两比较交换
-            // 把数组中最小的那个往上冒，冒的过程就是和他相邻的元素交换。这个冒的过程就是内循环。
+            // 把该数值向右移动，直至移动到最右边
             for(int j = 1; j < myArray.length - i; j++) {
                 System.out.print("In search " + SortsPerformed + ": i = " + i);
-                System.out.print(" Comparing: " + myArray[i] + " with others");
+                System.out.print(", j = " + j);
+                System.out.print(", Comparing " + myArray[j - 1] + " with right-side neighbours");
 
                 SortsPerformed++;
-                System.out.print(" j = " + j);
+
                 // 交换
                 if(myArray[j - 1] > myArray[j]) {
-                    System.out.println(" Swapping: " + myArray[j - 1] + " and " + myArray[j]);
+                    System.out.println(", Swapping: " + myArray[j - 1] + " and " + myArray[j]);
                     temp = myArray[j - 1];
                     myArray[j - 1] = myArray[j];
                     myArray[j] = temp;
                 }
                 else
-                    System.out.println(" No swapping done.");
+                    System.out.println(", No swapping needed.");
             }
         }
         return SortsPerformed;
