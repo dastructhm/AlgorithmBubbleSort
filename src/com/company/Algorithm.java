@@ -24,10 +24,8 @@ public class Algorithm {
                     myArray[j] = temp;
                 }
 
-
-
                 else
-                    System.out.print(", No swapping needed.");
+                    System.out.print(", No swapping needed");
 
                 System.out.print(", Array becomes: ");
                 for (int element : myArray) {
