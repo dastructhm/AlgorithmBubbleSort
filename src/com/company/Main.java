@@ -11,7 +11,7 @@ public class Main {
         InputElements myElements = new InputElements();
         myElements.SetElements(arrayLength, myArray);
 
-        System.out.print("Unsorted: ");
+        System.out.print("Original Array: ");
 
         for (int element : myArray) {
             System.out.print(element + " ");
@@ -21,7 +21,7 @@ public class Main {
         Algorithm myBubbleSort = new Algorithm();
         int SearchesPerformed = myBubbleSort.BubbleSort(myArray);
 
-        System.out.print("Sorted: ");
+        System.out.print("Sorted Array: ");
 
         for (int element : myArray) {
             System.out.print(element + " ");
