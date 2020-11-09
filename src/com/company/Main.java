@@ -11,7 +11,7 @@ public class Main {
         InputElements myElements = new InputElements();
         myElements.SetElements(arrayLength, myArray);
 
-        System.out.print("Original Array: ");
+        System.out.print("                                                               Original Array: ");
 
         for (int element : myArray) {
             System.out.print(element + " ");
