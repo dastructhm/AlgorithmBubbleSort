@@ -1,7 +1,7 @@
 package com.company;
 
 public class Algorithm {
-    // 中间变量,用于两个元素交换位置
+    // 中间变量, 用于两个元素交换位置
     int temp;
     int SortsPerformed = 1;
 
